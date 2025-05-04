@@ -5,26 +5,26 @@ Features a dynamic leaderboard that ranks players by the virtual cash they've ea
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 - How It Works
->Startup and Instructions
+>Startup and Instructions:
   Upon launching the game, background music plays while the user is shown game instructions.
 
->Name Entry
+>Name Entry:
   The user is prompted to enter their name. If skipped, a meme pops up as a humorous reminder. The name is later used for the leaderboard.
 
->Difficulty Selection via Dice Roll
+>Difficulty Selection via Dice Roll:
   The user rolls a virtual dice to randomly determine the difficulty level of the quiz.
 
->Quiz Time (10 Questions)
+>Quiz Time (10 Questions):
   No time constraints—this is a fun quiz, not a competitive exam! 😄
   After each question, a meme is displayed to keep the tone light-hearted.
 
->Scoring and Cash System
+>Scoring and Cash System:
   The user receives a score (number of correct answers) and a virtual cash amount based on performance.
 
 >Catch: One wrong answer wipes out all accumulated cash, regardless of how many correct answers preceded it. However, the score remains intact.
   This twist adds excitement and intensity to the game.
 
->Leaderboard
+>Leaderboard:
   A leaderboard button reveals a popup window displaying the top players sorted by score and cash won. Data is saved to a local CSV file.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,6 +53,7 @@ csv, random, os, time – standard libraries
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 - Project Structure
+```
 KBC_2.O-A_Python_Project/
 ├── KBC_2.O.py
 ├── leaderboard.csv
@@ -65,6 +66,7 @@ KBC_2.O-A_Python_Project/
 │   ├── Timer.mp3
 │   └── Leaderboard.mp3
 └── README.md
+```
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -76,12 +78,17 @@ KBC_2.O-A_Python_Project/
    cd KBC_2.O-A_Python_Project
    ```
 
-2. Install dependencies (if not already installed):
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Install dependencies (if pygame not installed):
    ```bash
    pip install pygame
    ```
 
-3. Run the game:
+4. Run the game:
    ```bash
-   python main.py
+   python KBC_2.O.py
    ```
